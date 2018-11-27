@@ -19,9 +19,9 @@ def field():
     print(str(a) + " * " + str(b) + " modulo " + str(n) + " is: " + str(p))
 
     if is_prime(n):
-        print("Z_" + str(n) + " is a field.")
+        print("Z/" + str(n) + "Z " + " is a field.")
     else:
-        print("Z_" + str(n) + " is not a field.")
+        print("Z/" + str(n) + "Z " + " is not a field.")
 
 def main():
     field()
