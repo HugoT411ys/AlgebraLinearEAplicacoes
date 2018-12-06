@@ -10,18 +10,18 @@ def is_prime(number):
     return True
 
 def field():
-    a = int(input("Enter a: "))
-    b = int(input("Enter b: "))
-    n = int(input("Enter n: "))
+    a = int(input("Valor de a: "))
+    b = int(input("Valor de b: "))
+    n = int(input("Valor de c: "))
     s = (a + b) % n
     p = (a * b) % n
-    print(str(a) + " + " + str(b) + " modulo " + str(n) + " is: " + str(s))
-    print(str(a) + " * " + str(b) + " modulo " + str(n) + " is: " + str(p))
+    print(str(a) + " + " + str(b) + " modulo " + str(n) + " eh: " + str(s))
+    print(str(a) + " * " + str(b) + " modulo " + str(n) + " eh: " + str(p))
 
     if is_prime(n):
-        print("Z/" + str(n) + "Z " + " is a field.")
+        print("Z/" + str(n) + "Z " + " eh um corpo.")
     else:
-        print("Z/" + str(n) + "Z " + " is not a field.")
+        print("Z/" + str(n) + "Z " + " eh um corpo.")
 
 def main():
     field()
