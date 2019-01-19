@@ -1,13 +1,13 @@
 import matrizes as mt
 
 def triangulos(A, B):
-    num_triangulos = 0
+    existe_triangulo = False
     l, c = mt.dimensao_matriz(A)
     for i in range(l):
         for j in range(c):
             if(A[i][j] * B[i][j]):
-                num_triangulos += 1
-    return num_triangulos
+                existe_triangulo = True
+    return existe_triangulo
 
 print("Digite a quantidade de vertices do grafo.")
 
